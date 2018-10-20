@@ -1,0 +1,9 @@
+@font-face {
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+    font-family: Roboto-Regular;
+}
+
+@font-face {
+    src: url(../fonts/Playfair_Display/PlayfairDisplay-Regular.ttf);
+    font-family: PLayfairDisplay-Regular;
+}
