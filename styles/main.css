@@ -4,6 +4,16 @@ body, html {
     width: 100%;
 }
 
+.notesLogo {
+    position: absolute;
+    top: 0;
+    font-family: PlayfairDisplay-Regular;
+    font-weight: 100;
+    font-size: 50px;
+    margin: 25px;
+    color: #252525;
+}
+
 .notesLandingPage {
     height: 100vh;
     width: 100%;
