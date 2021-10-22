@@ -1,11 +1,19 @@
 // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyB9RynyMVJPsIgE9xVqi71mP3UIckEjoXg",
-    authDomain: "notes-4f85d.firebaseapp.com",
-    databaseURL: "https://notes-4f85d.firebaseio.com",
-    projectId: "notes-4f85d",
-    storageBucket: "notes-4f85d.appspot.com",
-    messagingSenderId: "34291808832"
+//   var config = {
+//     apiKey: "AIzaSyB9RynyMVJPsIgE9xVqi71mP3UIckEjoXg",
+//     authDomain: "notes-4f85d.firebaseapp.com",
+//     databaseURL: "https://notes-4f85d.firebaseio.com",
+//     projectId: "notes-4f85d",
+//     storageBucket: "notes-4f85d.appspot.com",
+//     messagingSenderId: "34291808832"
+//   };
+var config = {
+    apiKey: "AIzaSyCAYKHWWhiLM6vDq6_1jJpeXRZrL0e6OSc",
+    authDomain: "get-rent.firebaseapp.com",
+    databaseURL: "https://get-rent.firebaseio.com",
+    projectId: "get-rent",
+    storageBucket: "get-rent.appspot.com",
+    messagingSenderId: "767402603461"
   };
   firebase.initializeApp(config);
   var database = firebase.database();
@@ -70,16 +78,17 @@
     //Display recieved Data.
     var notesData = data.val();
         if (notesData !== null) {
-            ++retrieveCount;
-            var keys = Object.keys(notesData);
-            keys.reverse();
-            for (var i = 0; i < keys.length; i++) {
-                var k = keys[i];
-                var finalNote = notesData[k].note;
-                var finalNoteSanitized = sanitizeInputs(finalNote);
-                //console.log(finalNote);
-                writeNoteData(finalNote, i);
-            }
+            // ++retrieveCount;
+            // var keys = Object.keys(notesData);
+            // keys.reverse();
+            // for (var i = 0; i < keys.length; i++) {
+            //     var k = keys[i];
+            //     var finalNote = notesData[k].note;
+            //     var finalNoteSanitized = sanitizeInputs(finalNote);
+            //     //console.log(finalNote);
+            //     writeNoteData(finalNote, i);
+            // }
+            console.log(notesData);
         }
         else {
             console.log('No data in database');
